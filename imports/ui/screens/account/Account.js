@@ -3,19 +3,19 @@ import { Text, View } from 'react-native';
 
 import layout from '../../stylesheets/app/layout';
 
-class Home extends React.Component {
-  
+class Account extends React.Component {
+
   static navigationOptions = {
-    title: 'Home',
+    title: 'Account',
   };
 
   render() {
     return (
       <View style={layout.container}>
-        <Text>LIBRARY</Text>
+        <Text>Account</Text>
       </View>
     );
   }
 }
 
-export default Home;
+export default Account;
