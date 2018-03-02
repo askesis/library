@@ -3,6 +3,7 @@ import { Text, View } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
 import layout from '../../stylesheets/app/layout';
+import BookList from '../../components/bookList/BookList';
 
 class Home extends React.Component {
   
@@ -17,6 +18,7 @@ class Home extends React.Component {
     return (
       <View style={layout.container}>
         <Text>LIBRARY</Text>
+        <BookList />
       </View>
     );
   }
