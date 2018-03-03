@@ -17,7 +17,6 @@ class Home extends React.Component {
   render() {
     return (
       <View style={layout.container}>
-        <Text>LIBRARY</Text>
         <BookList />
       </View>
     );
