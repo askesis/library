@@ -8,9 +8,15 @@ const book = StyleSheet.create({
     padding: 10,
     marginLeft: 16
   },
-  itemText: {
-    fontSize: 14,
+  text: {
+    fontSize: 18,
+    fontWeight: 'bold',
     height: 25,
+    marginTop: -10,
+  },
+  range: {
+    opacity: 0.9,
+
   }
 });
 
