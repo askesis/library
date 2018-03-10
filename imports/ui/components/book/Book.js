@@ -1,17 +1,19 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, Image } from 'react-native';
+import { Card, ListItem, Button } from 'react-native-elements'
 
 import book from '../../stylesheets/app/book/book';
+
+const avatar = 'https://s3.amazonaws.com/uifaces/faces/twitter/brynn/128.jpg';
 
 class Book extends React.Component {
   render() {
     const { item } = this.props;
     return (
-      <View style={book.items} >
-        <Text style={book.itemText}>{item.name}</Text>
-        <Text style={book.itemText}>{item.author}</Text>
-        <Text style={book.itemText}>{item.range}</Text>
-      </View>
+      <Card image={ require('../../img/kanada-banf-gory.jpg') } >
+        <Text style={book.text}>{item.name}, <Text >{item.author}</Text></Text>
+        <Text style={book.range}>{item.range}</Text>
+      </Card>
     );
   }
 }
