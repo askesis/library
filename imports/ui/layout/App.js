@@ -1,12 +1,15 @@
 import React from 'react';
-import { TabNavigator } from 'react-navigation';
+import { TabNavigator, StackNavigator} from 'react-navigation';
 
 import Home from '../screens/home/Home';
 import Account from '../screens/account/Account';
+import BookScreen from '../screens/book/BookScreen';
+
+const StackHome = StackNavigator( { Home: { screen: Home}, Book: { screen: BookScreen } })
 
 const screens = { 
   Home: {
-    screen: Home,
+    screen: StackHome,
   },
   Account: {
     screen: Account,
