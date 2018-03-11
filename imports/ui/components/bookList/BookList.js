@@ -12,9 +12,15 @@ class BookList extends React.Component {
     super(props);
     
     this.state = {};
+
+    this._renderItem = this._renderItem.bind(this);
   }
 
-  _renderItem = ({item}) => <Book id={item.name} item={item} />
+  _renderItem({item}){ 
+    const { navigate } = this.props;
+
+    return <Book id={item.name} item={item} navigate={navigate} /> 
+  }
   
   render() {
     return (

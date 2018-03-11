@@ -15,13 +15,15 @@ class Home extends React.Component {
   };
 
   render() {
+    const { navigate } = this.props.navigation;
+
     return (
       <View style={layout.container}>
         <StatusBar
           backgroundColor="blue"
           barStyle="dark-content"
         />
-        <BookList />
+        <BookList navigate={navigate} />
       </View>
     );
   }
