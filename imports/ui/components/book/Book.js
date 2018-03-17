@@ -16,7 +16,7 @@ class Book extends React.Component {
   }
 
   pushPage(){
-    this.props.navigate('Book');
+    this.props.navigate('Book', this.props.item);
   }
 
   onClickCard(){

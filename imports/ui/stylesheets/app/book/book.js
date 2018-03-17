@@ -16,8 +16,31 @@ const book = StyleSheet.create({
   },
   range: {
     opacity: 0.9,
+  },
 
-  }
+  descriptionOnImage: {
+    color: 'black', 
+    marginTop: 60,
+    // backgroundColor: 'rgba(255, 255, 255, 0.6)',
+    // opacity: 0.5,
+    fontSize: 20,
+    fontWeight: '600'
+  },
+
+  name: {
+    fontSize: 40,
+    fontWeight: '600'
+  },
+
+  author: {
+    fontSize: 30,
+    fontWeight: '600'
+  },
+
+  range: {
+    fontSize: 17,
+  },
+
 });
 
 export default book;
