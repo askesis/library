@@ -1,10 +1,14 @@
 import React from 'react';
-import { Text, View, ImageBackground } from 'react-native';
+import { Text, View, ImageBackground, Button } from 'react-native';
 
 import Icon from 'react-native-vector-icons/FontAwesome';
 
 import layout from '../../stylesheets/app/layout';
 import book from '../../stylesheets/app/book/book';
+import { RNCamera, FaceDetector } from 'react-native-camera';
+
+
+
 
 class BookScreen extends React.Component {
   
@@ -26,6 +30,7 @@ class BookScreen extends React.Component {
             <Text style={book.range}>{range}</Text>
             <Text style={book.descriptionOnImage}>{description}</Text>
           </View>
+          <Button onPress={()=>console.log('press')} title="Take a book" />
         </ImageBackground>
 
       </View>
